@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Button Example</title>
+  <script src="https://use.thiss.io/thiss.js"></script>
+</head>
+<body>
+  <main role="main">
+    <h1>Please authenticate yourself!</h1>
+    <div id="login"/>
+    <script>
+    window.onload = function() {
+       thiss.DiscoveryComponent.render({
+           loginInitiatorURL: 'https://localhost/Shibboleth.sso/Login?target=#',
+       }, '#login');
+    };
+    </script>
+  </main>
+</body>
+</html>
